@@ -38,6 +38,17 @@ html {
     display: inline-block; /* Ensure the image behaves like a block-level element but centers */
 }
 
+.image-section {
+    text-align: center; /* Center the image horizontally */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    display: inline-block; /* Ensure the image behaves like a block-level element but centers */
+}
+
 /* Adjust the main title section to sit properly within the viewport */
 .main-title-section {
     margin-top: 0; /* Remove any top margin */
@@ -149,4 +160,12 @@ html {
 .md-sidebar--primary,
 .md-sidebar--secondary {
     display: none !important;
+}
+
+p.admonition-title::before {
+    display: none;
+}
+p.admonition-title {
+    margin: 0;
+    padding: 0;
 }
