@@ -426,60 +426,153 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyper-Skin 2023 - NeurIPS 2023</title>
-    <link rel="stylesheet" href="stylesheets/extra.css">
-</head>
-
-<body>
-    <div class="container">
-        <h1>Hyper-Skin 2023 at NeurIPS 2023</h1>
-        <p>Welcome to the Hyper-Skin 2023 project page for NeurIPS 2023. This page provides an overview of our research, dataset, and code related to hyperspectral imaging reconstruction from RGB images. Our goal is to advance the field of applied artificial intelligence and image processing.</p>
-
-        <hr>
-
-        <!-- Paper Section -->
-        <section id="paper">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hyper-Skin 2023 - NeurIPS 2023</title>
+      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <h1>Hyper-Skin 2023 at NeurIPS 2023</h1>
+         <p>Welcome to the Hyper-Skin 2023 project page for NeurIPS 2023. This page provides an overview of our research, dataset, and code related to hyperspectral imaging reconstruction from RGB images.</p>
+         <!-- New Buttons Section -->
+         <div class="column has-text-centered" style="display:block; margin-top: 2%">
+            <div class="publication-links">
+               <!-- PDF Link. -->
+               <span class="link-block">
+                  <a href="https://openreview.net/forum?id=doV2nhGm1l" class="external-link button is-normal is-rounded is-dark">
+                     <span class="icon">
+                        <i class="fas fa-file-pdf"></i> <!-- Use Font Awesome PDF icon -->
+                     </span>
+                     <span>Paper</span>
+                  </a>
+               </span>
+               <!-- video -->
+               <span class="link-block">
+                  <a href="https://slideslive.com/embed/presentation/39009638?js_embed_version=3&embed_init_token=eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjU0MjU5OTAsImV4cCI6MTcyNTU1NTU5MCwidSI6eyJ1dWlkIjoiNjRkODdlMDItNzQzNS00YjkzLTkyMzMtZTVhN2ZmZWJjYmY1IiwiaSI6bnVsbCwiZSI6bnVsbCwibSI6ZmFsc2V9LCJkIjoibmV1cmlwcy5jYyJ9.YhjEHIxYvWHu6tuse8_7PhW_zbZuMxw8pOEo0gC2KcI&embed_parent_url=https%3A%2F%2Fneurips.cc%2Fvirtual%2F2023%2Fposter%2F73523&embed_origin=https%3A%2F%2Fneurips.cc&embed_container_id=presentation-embed-39009638&auto_load=true&auto_play=false&zoom_ratio=&disable_fullscreen=false&locale=en&vertical_enabled=true&vertical_enabled_on_mobile=false&allow_hidden_controls_when_paused=true&fit_to_viewport=true&custom_user_id=&user_uuid=64d87e02-7435-4b93-9233-e5a7ffebcbf5" class="external-link button is-normal is-rounded is-dark">
+                     <span class="icon">
+                        <i class="fab fa-youtube"></i> <!-- Use Font Awesome YouTube icon -->
+                     </span>
+                     <span>Video</span>
+                  </a>
+               </span>
+               <!-- code -->
+               <span class="link-block">
+                  <a href="https://github.com/hyperspectral-skin/Hyper-Skin-2023" class="external-link button is-normal is-rounded is-dark">
+                     <span class="icon">
+                        <i class="fab fa-github"></i> <!-- Use Font Awesome GitHub icon -->
+                     </span>
+                     <span>Code</span>
+                  </a>
+               </span>
+               <!-- data -->
+               <span class="link-block">
+                  <a href="https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=fx-ZZNZEjE2c1Hhi6MuUxl1_wSlwNU5Eg36fPHKPAfpUQkdaMUc0NVIwQlM5NTQ3RzZMMDk4NFhCTi4u&Token=e684d86ba1d24483a6b668b91c40d8dc" class="external-link button is-normal is-rounded is-dark">
+                     <span class="icon">
+                        <i class="far fa-images"></i> <!-- Use Font Awesome Images icon -->
+                     </span>
+                     <span>Data Access Request</span>
+                  </a>
+               </span>
+               <!-- poster -->
+               <span class="link-block">
+                  <a href="https://neurips.cc/media/PosterPDFs/NeurIPS%202023/73523.png?t=1701531800.0204892" class="external-link button is-normal is-rounded is-dark">
+                     <span class="icon">
+                        <i class="fas fa-image"></i> <!-- Use Font Awesome Image icon -->
+                     </span>
+                     <span>Poster</span>
+                  </a>
+               </span>
+               <!-- slides -->
+               <span class="link-block">
+                  <a href="https://neurips.cc/media/neurips-2023/Slides/73523.pdf" class="external-link button is-normal is-rounded is-dark">
+                     <span class="icon">
+                        <i class="fas fa-file-powerpoint"></i> <!-- PowerPoint-like icon -->
+                     </span>
+                     <span>Slides</span>
+                  </a>
+               </span>
+            </div>
+         </div>
+         <hr>
+         <!-- Introduction Section -->
+         <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Introducing Hyper-Skin, a uniquely designed hyperspectral dataset aiming to revolutionize hyperspectral skin analysis on consumer devices. With spatial and spectral resolution of <strong>1024 × 1024 × 448</strong>, Hyper-Skin offers an extensive collection of hyperspectral cubes, providing over a million spectra per image.</p>
+            <p>A notable feature of Hyper-Skin is the inclusion of synthesized RGB images generated from 28 real camera response functions, enabling versatile experimental setups. What sets Hyper-Skin apart is its comprehensive spectral coverage, including both the visible (VIS) spectrum spanning from <strong>400nm</strong> to <strong>700nm</strong> and near-infrared (NIR) spectrum from <strong>700nm</strong> to <strong>1000nm</strong>, facilitating a holistic understanding of various aspects of human facial skin.</p>
+            <p>This dataset enables new possibilities for consumer applications to see beyond the visual appearance of their selfies and gain valuable insights into their skin's physiological characteristics, such as melanin and hemoglobin concentrations.</p>
+            <p>With the Hyper-Skin dataset, we aim to facilitate ongoing research in facial skin-spectra reconstruction on consumer devices, bringing affordable hyperspectral skin analysis directly to the consumer's fingertips.</p>
+         </section>
+         <hr>
+         <!-- Paper Section -->
+         <section id="paper">
             <h2>Paper: Data Collection and Reconstruction Process</h2>
             <p>Our paper, presented at NeurIPS 2023, describes the comprehensive data collection process and the innovative reconstruction technique developed for this project. The main contributions of the paper are:</p>
             <ul>
-                <li><strong>Data Collection:</strong> A detailed description of the data acquisition methods used to collect high-quality hyperspectral images, including equipment setup, calibration, and preprocessing steps.</li>
-                <li><strong>Reconstruction Process:</strong> An in-depth explanation of the reconstruction methodology that translates RGB images into hyperspectral images. This section covers the underlying algorithms, optimization techniques, and model architecture used for this purpose.</li>
+               <li><strong>Data Collection:</strong> A detailed description of the data acquisition methods used to collect high-quality hyperspectral images, including equipment setup, calibration, and preprocessing steps.</li>
+               <li><strong>Reconstruction Process:</strong> An in-depth explanation of the reconstruction methodology that translates RGB images into hyperspectral images. This section covers the underlying algorithms, optimization techniques, and model architecture used for this purpose.</li>
             </ul>
             <p><a href="https://openreview.net/forum?id=doV2nhGm1l" class="btn">Access the Paper</a></p>
-        </section>
-
-        <hr>
-
-        <!-- Code Section -->
-        <section id="code">
+         </section>
+         <hr>
+         <!-- Dataset Description Section -->
+         <section id="dataset-description">
+            <h2>Data: Hyper-skin-2023 Dataset</h2>
+            <p>The Hyper-Skin dataset consists of 306 hyperspectral data samples collected from 51 participants. Each participant contributed 6 images, covering 2 types of facial expressions and 3 different face poses. This diverse image collection ensures a broad representation of poses and facial expressions commonly encountered in selfies. The RAW hyperspectral data underwent radiometric calibration and were resampled into two distinct 31-band datasets. One dataset covers the visible spectrum, ranging from 400nm to 700nm, while the other dataset covers the near-infrared spectrum, ranging from 700nm to 1000nm. Additionally, synthetic RGB and Multispectral (MSI) data were generated, including RGB images and an infrared image at 960nm. The Hyper-Skin dataset comprises two types of data: (RGB, VIS) and (MSI, NIR), offering different needs in skin analysis and facilitates comprehensive investigations of various skin features.</p>
+            <!-- Pair of (RGB, VIS) Data Section -->
+            <div class="admonition note">
+               <p class="admonition-title">Pair of (RGB, VIS) Data</p>
+               <p>The visible spectrum data in the Hyper-Skin dataset allows for the analysis of surface-level skin characteristics...</p>
+               <p><strong>Example of (RGB, VIS) Pair:</strong></p>
+               <div>
+                  <img style="max-width: 100%; max-height: 100%;" src="../images/sampledata-vis.png" alt="Sample RGB VIS data">
+                  <p style="text-align: right; color: black; font-style: italic; font-size: small;">Images above are used with explicit consent from the participants and cannot be used elsewhere without prior consent.</p>
+               </div>
+            </div>
+            <!-- Pair of (MSI, NIR) Data Section -->
+            <div class="admonition note">
+               <p class="admonition-title">Pair of (MSI, NIR) Data</p>
+               <p>The near-infrared spectrum data included in the Hyper-Skin dataset facilitates the study of deeper tissue properties...</p>
+               <p><strong>Example of (MSI, NIR) Pair:</strong></p>
+               <div>
+                  <img style="max-width: 100%; max-height: 100%;" src="../images/sampledata-nir.png" alt="Sample MSI NIR data">
+                  <p style="text-align: right; color: black; font-style: italic; font-size: small;">Images above are used with explicit consent from the participants and cannot be used elsewhere without prior consent.</p>
+               </div>
+            </div>
+         </section>
+         <hr>
+         <!-- Code Section -->
+         <section id="code">
             <h2>Code: Hyperspectral Image Reconstruction</h2>
             <p>We provide the complete codebase for reconstructing hyperspectral images from RGB images. The code includes scripts for data preprocessing, model training, and evaluation, as well as implementation of the algorithms described in our paper.</p>
             <h3>Objective</h3>
             <p>The primary objective of the provided code is to reconstruct hyperspectral images from standard RGB images efficiently and accurately. It includes:</p>
             <ul>
-                <li>Data preprocessing pipelines.</li>
-                <li>Model architectures and training scripts.</li>
-                <li>Evaluation metrics and visualization tools.</li>
+               <li>Data preprocessing pipelines.</li>
+               <li>Model architectures and training scripts.</li>
+               <li>Evaluation metrics and visualization tools.</li>
             </ul>
             <p><a href="https://github.com/hyperspectral-skin/Hyper-Skin-2023" class="btn">Access the Code on GitHub</a></p>
-        </section>
-
-        <hr>
-
-        <!-- Acknowledgments Section -->
-        <section id="acknowledgments">
-            <h2>Acknowledgments</h2>
-            <p>We would like to thank our collaborators and contributors who have made this research possible. Special thanks to the organizers of NeurIPS 2023 for the platform to present our work.</p>
-        </section>
-
-    </div>
-</body>
-
+         </section>
+         <hr>
+         <!-- Citations Section -->
+         <h2 id="citation">Citation</h2>
+         <p>If you used the dataset for your publication, kindly acknowledge and cite the following work:
+         <div class="highlight">
+            <pre><span></span><code>  @inproceedings{ng2023hyperskin,
+    title={Hyper-Skin: A Hyperspectral Dataset for Reconstructing Facial Skin-Spectra from {RGB} Images},
+    author={Pai Chet Ng and Zhixiang Chi and Yannick Verdie and Juwei Lu and Konstantinos N Plataniotis},
+    booktitle={Thirty-seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+    year={2023},
+    url={https://openreview.net/forum?id=doV2nhGm1l}
+    }
+</code></pre>
+         </div>
+      </div>
+   </body>
 </html>
 
 

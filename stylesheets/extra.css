@@ -108,3 +108,45 @@ html {
 .team-contact-icons a {
     margin-left: 10px; /* Adds space between icons */
 }
+
+/* Ensure button text is white */
+.button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #1E90FF; /* Set the background color */
+    color: white !important; /* Force the text color to white */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 25px; /* Make the button rounded */
+    text-decoration: none; /* Remove underline from text */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Ensure the Font Awesome icons are white */
+.button .icon i {
+    color: white !important; /* Force icon color to white */
+}
+
+.button:hover {
+    background-color: #1C86EE; /* Darken the background color on hover */
+}
+
+/* Keep space between the icon and text */
+.button .icon {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Center publication links and add space between buttons */
+.publication-links {
+    display: flex;
+    justify-content: center; /* Centers the child elements horizontally */
+    align-items: center; /* Aligns the child elements vertically */
+    gap: 10px; /* Adds space between the buttons (optional) */
+    flex-wrap: wrap; /* Allows wrapping if buttons overflow */
+}
+
+.md-sidebar--primary,
+.md-sidebar--secondary {
+    display: none !important;
+}
