@@ -542,6 +542,52 @@
                   <p style="text-align: right; color: black; font-style: italic; font-size: small;">Images above are used with explicit consent from the participants and cannot be used elsewhere without prior consent.</p>
                </div>
             </div>
+            <!-- Dataset Attributes Section -->
+            <section id="dataset-attributes">
+               <h2>Dataset Attributes</h2>
+               <p>The Hyper-Skin dataset offers a collection of <strong>306 hyperspectral cubes</strong>, meticulously gathered from <strong>51 unique subjects</strong>. Each subject’s <strong>facial skin</strong> is captured across <strong>three distinct angles</strong> (front, left, and right), and features <strong>two facial expressions</strong> (neutral and smile), ensuring diverse data to support robust facial skin analysis.</p>
+               <p>The hyperspectral images possess an impressive spatial resolution of <strong>1024 × 1024</strong> and capture <strong>448 spectral bands</strong>. To facilitate targeted analysis, the data has been <strong>resampled into two 31-band datasets</strong>, one spanning the <strong>visible spectrum (VIS)</strong> from <strong>400nm to 700nm</strong> and the other covering the <strong>near-infrared spectrum (NIR)</strong> from <strong>700nm to 1000nm</strong>, both at <strong>10nm steps</strong>.</p>
+               <!-- Add the GIF here -->
+               <div class="image-block">
+                  <p>Below is an example of the VIS and NIR spectrum graphs being generated from hyperspectral data:</p>
+                  <img src="../images/asd.gif" alt="Creation of VIS and NIR Graph" style="max-width: 100%; height: auto;">
+               </div>
+               <table>
+                  <thead>
+                     <tr>
+                        <th>Description</th>
+                        <th>(RGB, VIS)</th>
+                        <th>(MSI, NIR)</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Input</td>
+                        <td>RGB</td>
+                        <td>MSI (RGB + Infrared at 960nm)</td>
+                     </tr>
+                     <tr>
+                        <td>Output</td>
+                        <td>VIS (400nm - 700nm)</td>
+                        <td>NIR (700nm - 1000nm)</td>
+                     </tr>
+                     <tr>
+                        <td>Skin physiological features</td>
+                        <td>Surface-level characteristics (e.g., pigmentation, melanin map)</td>
+                        <td>Deeper tissue properties (e.g., collagen content, hemoglobin map)</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </section>
+         </section>
+         <hr>
+         <!-- Dataset Collection Section -->
+         <section id="dataset-collection">
+            <h2>Dataset Collection</h2>
+            <p>Compliant with <strong>University research ethics protocols</strong>, the dataset collection process was carefully designed to ensure accuracy and reliability. The study was conducted under the approved protocol <strong>RIS-42284</strong>, and participants provided <strong>informed consent</strong> before data collection.</p>
+            <p>Data acquisition was performed using the <strong>Specim FX10 camera</strong>, a <strong>pushbroom camera</strong> known for its precision in hyperspectral imaging. The camera was mounted on a <strong>customized scanner</strong> to ensure precise scanning, and the subject's face was placed <strong>40 cm</strong> from the camera. To enhance image quality, <strong>halogen lights</strong> were positioned on either side of the subject, providing optimal illumination.</p>
+            <p>Each hyperspectral image was captured with a <strong>frame rate of 45Hz</strong> for one line, taking approximately <strong>22.7 seconds</strong> to scan all <strong>1024 lines</strong>, covering the full range from <strong>400nm to 1000nm</strong>. This meticulous approach ensured the high quality of the 448 spectral bands.</p>
+            <p>The dataset's demographic spans <strong>51 participants</strong> aged between their <strong>10s and 50s</strong>, with a gender distribution favoring <strong>males over females</strong>. The participants represent diverse ethnic backgrounds, including <strong>Asian, European, and Latino</strong>.</p>
          </section>
          <hr>
          <!-- Code Section -->
